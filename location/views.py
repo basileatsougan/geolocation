@@ -12,5 +12,5 @@ def index(request):
     json_location_data = res.text
     location_data = json.loads(json_location_data)
     
-    
+    print('location data is: ', location_data)
     return render(request, 'index.html', {'data': location_data})
